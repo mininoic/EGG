@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+<title>Slap Rat</title>
+<meta name='viewport' content='width=1024, user-scalable=no' />
+<style>
+	html, body {
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #000;
+            }
+	canvas {
+		background-color: #000;
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		top: 0;
+		left: 0;
+	}
+</style>
+<head>
+	
+	<meta charset="utf-8" />
+	
+	<script type="text/javascript">
+	  WebFontConfig = {
+	  	custom: {
+	    families: ['UTM Avo'],
+	    urls: ['font/font.css']
+	  	}
+	   
+	  };
+	  (function() {
+	    var wf = document.createElement('script');
+	    wf.src = 'js/webfont.js';
+	    wf.type = 'text/javascript';
+	    wf.async = 'true';
+	    var s = document.getElementsByTagName('script')[0];
+	    s.parentNode.insertBefore(wf, s);
+	  })(); 
+	</script>
+</head>
+<body>
+		<!-- The 'fill' div is used by the Amazon fillscreen.js script -->
+        <div id="fill">
+            <!-- Our main game canvas. This is what we pass to the FGL SDK as our game element -->
+            <canvas id="canvas"></canvas>
+        </div>        
+        <script src="js/jquery.min.js"></script>
+		<script src = "js/bkgm.js"></script>
+		<script src = "js/actor.js"></script>
+		<script src = "js/rat.js"></script>
+		<script src = "js/states.js"></script>
+		<script src = "js/main.js"></script>
+</body>
+</html>

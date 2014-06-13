@@ -1,0 +1,196 @@
+@font-face {
+    font-family: Avo;
+    src: url(Avo.woff);
+}
+
+*:focus {
+    outline: 0;
+}
+
+html, body{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	background: #000 url(bg.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	overflow:hidden;
+	color: #fff;
+	font-family: Avo;
+	-webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+
+  /* No support for these yet, use at own risk */
+  -o-user-select: none;
+  user-select: none;      
+}
+
+
+.overlay {
+	position: fixed; right: 0; bottom: 0;
+	min-width: 100%; min-height: 100%;
+	width: auto; height: auto;
+	background-color: #000;
+	opacity: 0.5;
+}
+
+video#bgvid {
+	position: fixed; right: 0; bottom: 0;
+	min-width: 100%; min-height: 100%;
+	width: auto; height: auto; z-index: 0;
+	background: #000 url(bg.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.main {
+	width: 100%;
+	height: 100%;
+}
+
+.title {
+	width: 100%;
+	height: 40px;
+	text-align: center;
+	top: 30%;
+	position: absolute;
+	margin-top: -40px;
+	margin-bottom: 20px;
+}
+
+.brand {
+	width: 100%;
+	text-align: center;
+	font-size: 60px;
+	margin-bottom: 10px;
+}
+
+.title1, .title2 {
+	display: inline-block;
+	font-size: 24px;
+	line-height: 40px;
+}
+
+.logo {
+	width: 40px;
+	height: 40px;
+	margin-bottom: -10px;
+	margin-right: 5px;
+	margin-left: 5px;
+}
+
+.SIGN, .soon {
+	display: inline-block;
+	margin-top: 10px;
+}
+
+.SIGN {
+	font-size: 16px;
+	color: #ffc513;
+}
+
+.soon {
+	font-size: 16px;
+	margin-left: -3px;
+}
+
+.soon {
+	font-style: italic;
+}
+
+.button {
+	
+}
+
+#follow, #secrets, #get, #submit {
+	margin: 20px 7px;
+	display: inline-block;
+	border-radius: 10px;
+	border: #aaa 1px solid;
+	width: 120px;
+	height: 28px;
+	line-height: 28px;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+.email {
+	width: 200px;
+	background: transparent;
+	margin: 20px 7px;
+	display: inline-block;
+	border-radius: 10px;
+	border: #aaa 1px solid;
+	height: 16px;
+	font-style: italic;
+	vertical-align: middle;
+	font-size: 16px;
+	padding: 5px;
+	color: #aaa;
+}
+
+#get:hover {
+	background-color: rgba(0,0,0,0.5)
+}
+
+#follow:hover {
+	background-color: rgba(59,89,152,0.5)
+}
+
+#secrets:hover {
+	background-color: rgba(179,18,23,0.5)
+}
+
+.vol {
+	position: fixed;
+	bottom: 0px;
+	right: 0px;
+}
+
+/* unvisited link */
+a:link, a:visited,a:hover,a:active {
+	color: #fff;
+	text-decoration: none;
+}
+
+@media screen and (max-width: 1024px) { /* Specific to this particular image */
+  #bgvid {
+    visibility: hidden;
+    display: none;
+  }
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+	.title2 {
+	    visibility: hidden;
+	    display: none;
+	    height: 0;
+	    line-height: 0;
+	    margin: 0;
+	    padding: 0;
+	}
+
+	#follow, #secrets, #get {
+		display: block;
+		width: inherit;
+		height: 40px;
+		line-height: 40px;
+		margin: 10px 40px;
+	}
+
+	.space {
+		display: block;
+		width: inherit;
+		height: 10px;	
+	}
+
+	.SIGN, .soon {
+		margin-bottom: 10px;
+	}
+
+}
